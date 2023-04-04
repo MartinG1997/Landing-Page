@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+.nav-hamb {
+    width: 30px;
+    height: 50%;
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-image .3s;
+}
+
+.nav-hamb-op {
+    background-image: url("../img/close.svg");
+}
+
+.nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-overlay {
+    background-color: #000000a7;
+    position: fixed;
+    inset: 0;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 65%;
+    max-width: 400px;
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+    padding: 70px 0;
+}
