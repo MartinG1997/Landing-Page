@@ -36,6 +36,14 @@
     background-color: #000000a7;
     position: fixed;
     inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s opacity;
+}
+
+.nav-overlay-show {
+    opacity: 1;
+    pointer-events: unset;
 }
 
 .nav-menu {
@@ -51,3 +59,61 @@
     overflow: auto;
     padding: 70px 0;
 }
+
+.nav-item {
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.nav-item:has(.nav-parent) {
+    padding: 0;
+}
+
+.nav-parent {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1.3em;
+    padding: 20px 0;
+}
+
+.nav-inner {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5em;
+    overflow: hidden;
+    height: 0;
+    transition: height .4s;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: aqua;
+}
+
+.nav-login {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.nav-login-border {
+    border-radius: 1em;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+
+.nav-sign {
+    display: inline-block;
+    color: grey;
+    padding: .7em 0;
+    text-decoration: none;
+}
+
