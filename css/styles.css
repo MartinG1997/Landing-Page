@@ -14,7 +14,7 @@
 
 .big-container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -68,6 +68,11 @@ header {
     color: #FF4519;
 }
 
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
 .container {
     padding-top: 20px;
     padding-bottom: 54px;
@@ -77,8 +82,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
 }
 
 .jumbotron {
@@ -119,11 +122,128 @@ header {
     width: 15%;
 }
 
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card {
+    min-width: 250px;
+    max-width: 30%;
+    height: 600px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-img img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    line-height: 1.7rem;
+    margin: 0 15px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin: 0 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.footer-cont {
+    width: 28.33333333%;
+    align-items: center;
+    display: inline-block;
+    margin: 25px 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-cont h2 {
+    margin: 20px 20px;
+}
+
+.footer-cont p {
+    margin: 20px 20px;;
+}
+
+.footer-cont a {
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 912px), (max-height: 1368) {
+    .container {
+        display: grid;
+    }
+    .card-container {
+        display: flex;
+    }
+    .footer-cont {
+        width: 40%;
+    }
+}
+
+@media (max-width:820px) {
+    .links {
+        display: none;
+    }
+    .hamburguer {
+        display: block;
+    }
+
+}
+
+@media (max-width: 774px) {
+    .footer-cont {
+        width: 40%;
+    }
+}
 
 @media (max-width:768px) {
     .container {
         display: grid;
-        flex-direction: column;
+    }
+
+    .card-container {
+        display: flex;
+    }
+}
+
+@media (max-width: 510px) {
+    .footer-cont {
+        width: 100%;
+    }
+    .footer-cont a {
+        display: inline;
+        margin: 0 20px;
     }
 }
 
@@ -134,5 +254,9 @@ header {
 
     .formulario button {
         width: 30%;
+    }
+
+    .card {
+        width: 70%;
     }
 }
