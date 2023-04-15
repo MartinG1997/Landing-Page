@@ -2,8 +2,8 @@
 ## Índice
 
 * [1. Introducción](#Introducción)
-* [2. Demostración](#2-Demostración)
-* [3. Agradecimientos y tecnologías](#3-Agradecimientos-y-tecnologías)
+* [2. Demostración](#Demostración)
+* [3. Agradecimientos y tecnologías](#Agradecimientos-y-tecnologías)
 
 
 ## Introducción
